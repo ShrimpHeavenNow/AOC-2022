@@ -2,7 +2,7 @@ with open('farts.txt') as f:
     sweeps = [line.rstrip().split("\n") for line in f]  #  This variable name is from day one of 2021
 
 score = 0
-for x in sweeps:
+for x in sweeps:  # I do this better in part two, but not by much.
     if x[0][0] == 'A' and x[0][2] == 'X':
         print("rock rock draw")
         score += 3
