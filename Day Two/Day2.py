@@ -4,28 +4,16 @@ with open('farts.txt') as f:
 score = 0
 for x in sweeps:  # I do this better in part two, but not by much.
     if x[0][0] == 'A' and x[0][2] == 'X':
-        print("rock rock draw")
         score += 3
     if x[0][0] == 'A' and x[0][2] == 'Y':
-        print("rock PAPER WIN")
         score +=6
-    if x[0][0] == 'A' and x[0][2] == 'Z':
-        print("rock SCIZ LOSE")
-    if x[0][0] == 'B' and x[0][2] == 'X':
-        print("PAPER rock LOSE")
     if x[0][0] == 'B' and x[0][2] == 'Y':
-        print("PAPER PAPER draw")
         score += 3
     if x[0][0] == 'B' and x[0][2] == 'Z':
-        print("PAPER SCIZ WIN")
         score += 6
     if x[0][0] == 'C' and x[0][2] == 'X':
-        print("SCIZ rock WIN")
         score += 6
-    if x[0][0] == 'C' and x[0][2] == 'Y':
-        print("SCIZ PAPER LOSE")
     if x[0][0] == 'C' and x[0][2] == 'Z':
-        print("SCIZ SCIZ draw")
         score +=3
     if x[0][2] == "X":
         score +=1
