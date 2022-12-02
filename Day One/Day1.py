@@ -12,11 +12,10 @@ for x in sweeps:  #  I KNOW theres a way to do this in the with loop and I think
 
 totals = []
 for x in entries:
-    current = 0
-    for y in x:
-        current += y
+    current = sum(x)
     totals.append(current)
-print("Part One: ", max(totals))  
+
 totals.sort()
 totals.reverse()
+print("Part One: ", max(totals))  
 print("Part Two: ", totals[0]+totals[1]+totals[2])
