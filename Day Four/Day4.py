@@ -1,0 +1,1 @@
+# lines = open("inputs/3.txt").read().strip().split("\n")
